@@ -11,3 +11,13 @@ def insertVendas(dados,nomeTab,cur:sqlite3.Cursor,con):
     print(resp)
     
     con.close()  
+    
+    
+dados = [
+    (1,1,1266,"2025-01-01",5)
+]
+
+con = sqlite3.connect("Floricultura.db")
+cur = con.cursor()
+
+insertVendas(dados,"",cur,con)

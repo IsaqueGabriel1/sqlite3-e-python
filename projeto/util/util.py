@@ -18,7 +18,6 @@ def inserirDadosEspecial(dados,nomeTab,cur:sqlite3.Cursor,con):
     cur.executemany(query,dados)
     con.commit()
     con.close()   
-    
 
 def buscar(value1,cur:sqlite3.Cursor):
     query = """
